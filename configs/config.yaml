@@ -1,0 +1,13 @@
+defaults:
+  - hardware: laptop      # Change to 'cluster' when moving
+  - model: resnet_baseline    # Change to 'convnext_heavy' later
+  - _self_
+
+project_name: "RenAIssance-OCR"
+seed: 42
+data_dir: "data/processed"
+epochs: 50
+
+train:
+  lr: 3e-4
+  focal_gamma: 2.0

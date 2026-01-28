@@ -1,0 +1,13 @@
+# --- Datasets & Large Files ---
+Rodrigo corpus 1.0.0/
+data/
+
+# --- Model Artifacts ---
+checkpoints/
+outputs/
+wandb/
+
+# --- Python System Files ---
+__pycache__/
+*.pyc
+.DS_Store

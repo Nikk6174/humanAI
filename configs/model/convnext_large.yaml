@@ -1,0 +1,3 @@
+backbone: "convnext_large_mlp"
+hidden_size: 512
+dropout: 0.3

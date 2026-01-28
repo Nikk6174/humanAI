@@ -1,0 +1,5 @@
+batch_size: 8            # Very small for 4GB VRAM
+num_workers: 2
+accelerator: "gpu"       # Or "auto"
+devices: 1
+pin_memory: False

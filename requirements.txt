@@ -1,0 +1,20 @@
+# Configuration Management
+hydra-core==1.3.2
+omegaconf
+
+# Model Training & Scaling
+lightning==2.1.0        # Handles multi-GPU automatically
+wandb                   # The dashboard for your results
+torchmetrics            # For calculating CER/WER reliably
+
+# Computer Vision & Augmentation
+timm                    # Access to ConvNeXt-Large
+albumentations          # Best image augmentation library
+opencv-python-headless  # For image processing (headless for server compatibility)
+
+# Text & Utils
+editdistance            # Fast calculation of error rates
+tqdm                    # Progress bars
+numpy
+pandas
+pillow

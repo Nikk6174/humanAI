@@ -1,0 +1,8 @@
+# Settings for High-Performance GPU Cluster (The "Overkill" Mode)
+batch_size: 128          # Large enough to saturate A100/V100 GPUs
+num_workers: 16          # Uses more CPU cores to load data faster than the GPUs can eat it
+pin_memory: True         # Speeds up transfer from CPU RAM to GPU VRAM
+accelerator: "gpu"
+devices: "auto"          # Automatically detects and uses ALL available GPUs (e.g., 4x or 8x)
+strategy: "ddp"          # Distributed Data Parallel: The magic that syncs gradients across multiple GPUs
+precision: "16-mixed"    # Uses FP16 to cut VRAM usage in half and speed up training by 2x
