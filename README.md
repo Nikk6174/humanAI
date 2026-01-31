@@ -1,4 +1,4 @@
-# RenAIssance-OCR: Automating Historical Text Recognition
+# Automating Historical Text Recognition
 
 > **Note**  
 > This research initiative is currently in the **active development phase**. The architecture and methodologies described below represent ongoing efforts to bridge the gap between computer vision and historical linguistics.
