@@ -1,6 +1,6 @@
 defaults:
-  - hardware: laptop      # Change to 'cluster' when moving
-  - model: resnet_baseline    # Change to 'convnext_heavy' later
+  - hardware: laptop      
+  - model: resnet_baseline    
   - _self_
 
 project_name: "RenAIssance-OCR"

@@ -4,12 +4,12 @@ omegaconf
 
 # Model Training & Scaling
 lightning==2.1.0        # Handles multi-GPU automatically
-wandb                   # The dashboard for your results
+wandb                   # dashboard 
 torchmetrics            # For calculating CER/WER reliably
 
 # Computer Vision & Augmentation
 timm                    # Access to ConvNeXt-Large
-albumentations          # Best image augmentation library
+albumentations          #  image augmentation library
 opencv-python-headless  # For image processing (headless for server compatibility)
 
 # Text & Utils

@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-# --- CONFIGURATION ---
+
 RODRIGO_ROOT = "Rodrigo corpus 1.0.0" # Update this to your actual folder path
 IMAGES_DIR = os.path.join(RODRIGO_ROOT, "images")
 TEXT_FILE = os.path.join(RODRIGO_ROOT, "text", "transcriptions.txt")
