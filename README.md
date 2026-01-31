@@ -11,19 +11,19 @@
 
 The transliteration of text from centuries-old works represents a research area that is largely underserved by current commercial tools. While resources such as Adobe Acrobat’s OCR can effectively process clearly printed modern sources, they are frequently incapable of extracting textual data from early forms of print—let alone handwritten manuscripts.
 
-**RenAIssance-OCR** focuses on the application of hybrid end-to-end models based on **weighted convolutional–recurrent architectures (CNN–RNN)** and **Large Language Models (LLMs)** to accurately recognize text in **seventeenth-century Spanish printed sources**.
+This project focuses on the application of hybrid end-to-end models based on **weighted convolutional–recurrent architectures (CNN–RNN)** and **Large Language Models (LLMs)** to accurately recognize text in **seventeenth-century Spanish printed sources**.
 
 ---
 
 ## 🏗️ Model Architecture
 
-This project implements a custom **CRNN (Convolutional Recurrent Neural Network)** designed specifically to handle the noise, degradation, and typographic irregularities of historical fonts. The architecture, defined as `RenAIssanceCRNN`, follows a modular design that enables interchangeable backbones and scalable complexity.
+This project implements a custom **CRNN (Convolutional Recurrent Neural Network)** designed specifically to handle the noise, degradation, and typographic irregularities of historical fonts. The architecture follows a modular design that enables interchangeable backbones and scalable complexity.
 
 ### 1. Feature Extraction (Vision Backbone)
 
 A CNN backbone is used to extract spatial features from input images. The system is intentionally model-agnostic and leverages **timm (PyTorch Image Models)** to dynamically load different architectures.
 
-- **Current Baseline:** ResNet-18  
+- **Current Baseline:** ConvNeXt-Small 
 - **Advanced Target:** ConvNeXt-Large (MLP-based), optimized for capturing high-fidelity details in degraded ink and uneven print impressions
 
 ---
